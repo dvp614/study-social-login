@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Configuration status="WARN">
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %5p --- [%10.50t] %-1.70c{1.}.%-1.30M:%04L: %m%n%ex"/>
+        </Console>
+    </Appenders>
+
+
+    <Loggers>
+        <Logger name="org.zerock.myapp" level="trace"/>
+
+        <Root level="warn">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
